@@ -21,10 +21,5 @@ local o = vim.opt
 o.cmdheight = 1
 o.relativenumber = false
 o.autochdir = true
-
--- setup options for neovide
-if vim.g.neovide then
-  require("neovide")
-else
-  vim.cmd([[set guifont=Agave\ Nerd\ Font:h10]])
-end
+o.pumblend = 30
+o.winblend = 30
