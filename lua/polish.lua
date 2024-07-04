@@ -15,6 +15,10 @@
 --   },
 -- }
 --
+if vim.g.neovide then
+	require("neovide")
+end
+--
 -- Setup local vim options
 local o = vim.opt
 --

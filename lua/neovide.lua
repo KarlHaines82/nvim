@@ -1,11 +1,11 @@
 if vim.g.neovide then
 	-- set font
 	vim.g.neovide_scale_factor = 1.0
-	vim.cmd([[set gfn=CaskaydiaCove\ Nerd\ Font:h10]])
-	vim.cmd([[set gfw=Noto\ Color\ Emoji:h10]])
+	vim.cmd([[set gfn=Agave\ Nerd\ Font:h10]])
+	-- vim.cmd([[set gfw=Noto\ Color\ Emoji:h10]])
 	-- setup some transparency
 	vim.g.neovide_transparency = 0.9
-	vim.g.neovide_floating_blur_amount_x = 6.0
+	vim.g.neovide_floating_blur_amount_x = 6
 	vim.g.neovide_floating_blur_amount_y = 6.0
 	vim.g.neovide_floating_shadow = true
 	vim.g.neovide_floating_z_height = 10
@@ -29,7 +29,7 @@ if vim.g.neovide then
 	vim.api.nvim_set_keymap("t", "<D-v>", "<C-R>+", { noremap = true, silent = true })
 	vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent = true })
 	-- setup font up/downsizing wityh ctrl- and ctrl+
-	-- vim.g.neovide_scale_factor = 1.0
+	vim.g.neovide_scale_factor = 1.0
 	local change_scale_factor = function(delta)
 		vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
 	end
@@ -39,6 +39,6 @@ if vim.g.neovide then
 	vim.keymap.set("n", "<C-->", function()
 		change_scale_factor(1 / 1.10)
 	end)
-elseif vim.fn.has("guirunning") < 0 then
-	vim.cmd([[set gfn=Agave\ Nerd\ Font:13]])
+	-- elseif vim.g.neovide < 1 and vim.fn.has("guirunning") < 0 then
+	-- vim.cmd([[set gfn=Agave\ Nerd\ Font:13]])
 end
