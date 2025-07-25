@@ -11,5 +11,4 @@ local telescope = require("telescope")
 --   }
 -- })
 
-telescope.load_extension("fzf")
-
+require("telescope").load_extension("fzf")

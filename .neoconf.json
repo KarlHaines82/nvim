@@ -9,12 +9,15 @@
     "plugins": {
       "lua_ls": {
         "enabled": true
+      },
+      "beautysh": {
+        "enabled": true
       }
     }
   },
   "lspconfig": {
     "lua_ls": {
-      "Lua.format.enable": true
+      "Lua.format.enable": false
     }
   }
 }

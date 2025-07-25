@@ -10,9 +10,10 @@ return {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
         -- install language servers
-        -- "lua-language-server",
         "mypy",
         "pyright",
+        "lua-language-server",
+        "shellcheck",
 
         -- install formatters
         -- "stylua",

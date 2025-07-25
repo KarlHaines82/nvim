@@ -1,3 +1,4 @@
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- Customize None-ls sources
 
 ---@type LazySpec
@@ -16,7 +17,6 @@ return {
     opts.sources = require("astrocore").list_insert_unique(opts.sources, {
       -- Set a formatter
       null_ls.builtins.formatting.stylua,
-      null_ls.builtins.formatting.prettier,
     })
   end,
 }
