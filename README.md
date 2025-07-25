@@ -1,6 +1,6 @@
-# AstroNvim Template
+# Karl's Neovim Template
 
-**NOTE:** This is for AstroNvim v5+
+## Based on AstroNvim
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
