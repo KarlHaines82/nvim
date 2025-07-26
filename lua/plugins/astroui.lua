@@ -18,14 +18,14 @@ return {
     --   astrodark = { -- a table of overrides/changes when applying the astrotheme theme
     --     -- Normal = { bg = "#000000" },
     --   },
-      tokyonight = {
-        Normal = {
-          fg = "#ffff00",
-        },
-      },
+      -- tokyonight = {
+      --   Normal = {
+      --     fg = "#ffff00",
+      --   },
+      -- },
     },
     -- },
-    -- -- Icons can be configured throughout the interface
+    -- -- Icons can be configured throughout the interface:w
     icons = {
       -- configure the loading of the lsp in the status line
       LSPLoading1 = "⠋",
