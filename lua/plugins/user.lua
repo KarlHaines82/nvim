@@ -51,7 +51,7 @@ return {
             table.concat(neovimascii.bloody, "\n") .. "\n" ..
             "neovim config by linuxkarl\n" .. 
             "baaed on astronvim template"
-        }
+        },
       }
     },
   },
