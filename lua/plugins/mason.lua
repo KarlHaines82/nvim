@@ -12,7 +12,8 @@ return {
         -- install language servers
         "mypy",
         "pyright",
-        "lua-language-server",
+        -- "lua-language-server",
+        -- "bashls",
         "shellcheck",
 
         -- install formatters

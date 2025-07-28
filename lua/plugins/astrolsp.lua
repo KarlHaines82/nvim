@@ -14,11 +14,12 @@ return {
       inlay_hints = true, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
     },
+    -- native_lsp_config = true,
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = false, -- enable or disable format on save globally
+        enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           "lua",
           "python",
@@ -30,7 +31,7 @@ return {
           "xml",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
+          "*",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
@@ -66,17 +67,17 @@ return {
           format_on_save = true,
           formatting = {
             enabled = true,
-          }
-        }
+          },
+        },
       },
       bashls = {
         settings = {
           format_on_save = false,
           formatting = {
             enabled = false,
-          }
-        }
-      }
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
@@ -124,7 +125,7 @@ return {
           cond = function(client)
             ---stylua: ignore
             return client.supports_method "textDocument/semanticTokens/full" and vim.lsp.semantic_tokens ~= nil
-          end
+          end,
         },
       },
     },
@@ -138,7 +139,7 @@ return {
     --     },
     --   },
     -- },
-    -- A custom `on_attach` function to be run after the default `on_attach` function
+    -- -- A custom `on_attach` function to be run after the default `on_attach` function
     -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
     -- stylua: ignore
     on_attach = function(client, bufnr)

@@ -23,18 +23,18 @@ return {
       underline = true,
     },
     -- passed to `vim.filetype.add`
-    -- filetypes = {
-    --   -- see `:h vim.filetype.add` for usage
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     [".foorc"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     [".*/etc/foo/.*"] = "fooscript",
-    --   },
-    -- },
+    filetypes = {
+      -- see `:h vim.filetype.add` for usage
+      extension = {
+        zsh = "zsh",
+      },
+      filename = {
+        [".zshrc"] = "zsh",
+      },
+      pattern = {
+        ["*.zsh"] = "zsh",
+      }, 
+    },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
@@ -53,6 +53,7 @@ return {
         -- This can be found in the `lua/lazy_setup.lua` file
         gfn = "Hermit_Nerd_Font:h10",
         python3_host_prog = "/data/data/com.termux/files/usr/bin/python3",
+        lazydev_enabled = true,
       },
     },
     -- Mappings can be configured through AstroCore as well.

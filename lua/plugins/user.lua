@@ -1,5 +1,5 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-local neovimascii = require("linuxkarl.neovimascii")
+local neovimascii = require "linuxkarl.neovimascii"
 
 ---@type LazySpec
 return {
@@ -10,26 +10,39 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-  { 'ibhagwan/fzf-lua' },
+  { "ibhagwan/fzf-lua" },
   -- Lazy.nvin spec
   {
-    '2kabhishek/nerdy.nvim',
+    "2kabhishek/nerdy.nvim",
     dependencies = {
-      'folke/snacks.nvim',
+      "folke/snacks.nvim",
     },
-    cmd = 'Nerdy',
+    cmd = "Nerdy",
     opts = {
       max_recents = 30, -- Configure recent icons limit
       add_default_keybindings = true, -- Add default keybindings
       use_new_command = true, -- Enable new command system
-    }
+    },
   },
   {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    opts = {}
+    opts = {},
   },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require('copilot').setup({
+  --       server = {
+  --         type = "nodejs",
+  --         custom_server_filepath = "/data/data/com.termux/files/usr/bin/copilot-node-server"
+  --       },
+  --     })
+  --   end
+  -- },
   -- lazy.nvim spec
   -- {
   --   'JunYang-tes/gemini-nvim',
@@ -47,12 +60,13 @@ return {
       -- dashboard = {preset = {header = table.concat(ascii.art.categories.text.neovim.sharp, "\n")}}
       dashboard = {
         preset = {
-          header = "\n" ..
-            table.concat(neovimascii.bloody, "\n") .. "\n" ..
-            "neovim config by linuxkarl\n" .. 
-            "baaed on astronvim template"
+          header = "\n"
+            .. table.concat(neovimascii.bloody, "\n")
+            .. "\n"
+            .. "neovim config by linuxkarl\n"
+            .. "baaed on astronvim template",
         },
-      }
+      },
     },
   },
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
