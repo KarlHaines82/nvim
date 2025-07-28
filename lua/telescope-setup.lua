@@ -1,5 +1,3 @@
-local telescope = require("telescope")
---
 -- telescope.setup({
 --   extensions = {
 --     fzf = {
@@ -11,4 +9,4 @@ local telescope = require("telescope")
 --   }
 -- })
 
-require("telescope").load_extension("fzf")
+require("telescope").load_extension "fzf"

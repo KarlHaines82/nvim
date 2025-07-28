@@ -25,13 +25,9 @@ return {
       },
       -- always enable unless `vim.g.lazydev_enabled = false`
       -- This is the default
-      enabled = function(root_dir)
-        return vim.g.lazydev_enabled == nil and true or vim.g.lazydev_enabled
-      end,
+      enabled = function(root_dir) return vim.g.lazydev_enabled == nil and true or vim.g.lazydev_enabled end,
       -- disable when a .luarc.json file is found
-      enabled = function(root_dir)
-        return not vim.uv.fs_stat(root_dir .. "/.luarc.json")
-      end,
+      enabled = function(root_dir) return not vim.uv.fs_stat(root_dir .. "/.luarc.json") end,
     },
   },
   { "justinsgithub/wezterm-types" },

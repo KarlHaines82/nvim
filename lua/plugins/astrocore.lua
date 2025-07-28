@@ -33,7 +33,7 @@ return {
       },
       pattern = {
         ["*.zsh"] = "zsh",
-      }, 
+      },
     },
     -- vim options can be configured here
     options = {
@@ -41,7 +41,10 @@ return {
         acd = true,
         cmdheight = 1,
         autoread = true,
+        termguicolors = true,
         relativenumber = false,
+        pb = 20,
+        winblend = 20,
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
@@ -54,6 +57,7 @@ return {
         gfn = "Hermit_Nerd_Font:h10",
         python3_host_prog = "/data/data/com.termux/files/usr/bin/python3",
         lazydev_enabled = true,
+        pumblend = 20,
       },
     },
     -- Mappings can be configured through AstroCore as well.
@@ -78,7 +82,7 @@ return {
         },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
-        [ "<Leader>b"] = { desc = "Buffers" },
+        ["<Leader>b"] = { desc = "Buffers" },
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false

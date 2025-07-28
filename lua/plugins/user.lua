@@ -61,7 +61,7 @@ return {
       dashboard = {
         preset = {
           header = "\n"
-            .. table.concat(neovimascii.bloody, "\n")
+            .. table.concat(neovimascii.delta_corps_priest1, "\n")
             .. "\n"
             .. "neovim config by linuxkarl\n"
             .. "baaed on astronvim template",
