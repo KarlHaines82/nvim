@@ -8,6 +8,17 @@ return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
+    status = {
+      icon_highlights = {
+        breadcrumbs = true,
+      },
+      separators = {
+        tab = { "" , "" },
+        left = {" "},
+        right = { "" },
+      },
+      -- colors = { require("tokyonight").colors }
+    },
     -- change colorscheme
     colorscheme = "tokyonight",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
