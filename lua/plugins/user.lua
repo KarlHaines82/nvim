@@ -56,6 +56,9 @@ return {
   -- },
   {
     "folke/snacks.nvim",
+    dependencies = {
+      { "nvim-tree/nvim-web-devicons", opts = {} },
+    },
     opts = {
       -- dashboard = {preset = {header = table.concat(ascii.art.categories.text.neovim.sharp, "\n")}}
       dashboard = {
