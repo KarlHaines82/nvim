@@ -54,7 +54,7 @@ return {
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
-        gfn = "Hermit_Nerd_Font:h10",
+        gfn = "Monospace:h10",
         -- python3_host_prog = "/data/data/com.termux/files/usr/bin/python3",
         lazydev_enabled = true,
         pumblend = 20,
