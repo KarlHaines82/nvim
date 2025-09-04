@@ -12,18 +12,19 @@ return {
         -- install language servers
         "mypy",
         "pyright",
-        -- "lua-language-server",
-        -- "bashls",
+        "lua-language-server",
+        "bash-language-server",
         "shellcheck",
 
         -- install formatters
-        -- "stylua",
+        "stylua",
         "prettier",
         "black",
         "beautysh",
 
         -- install debuggers
         "debugpy",
+        "bash-debug-adapter",
 
         -- install any other package
         "tree-sitter-cli",
